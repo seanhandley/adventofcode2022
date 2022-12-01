@@ -1,6 +1,6 @@
-# Advent of Code 2021
+# Advent of Code 2022
 
-[![CircleCI](https://circleci.com/gh/seanhandley/adventofcode2021.svg?style=svg)](https://circleci.com/gh/seanhandley/adventofcode2021)
+[![CircleCI](https://circleci.com/gh/seanhandley/adventofcode2022.svg?style=svg)](https://circleci.com/gh/seanhandley/adventofcode2022)
 
 ```
              *
@@ -13,7 +13,7 @@
          ^^^[_]^^^
 ```
 
-Solutions for the 2021 Advent of Code challenge.
+Solutions for the 2022 Advent of Code challenge.
 
 ## To Install
 
