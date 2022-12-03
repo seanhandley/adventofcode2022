@@ -44,11 +44,7 @@ def common_items(items)
 end
 
 def priority(item)
-  [("a".."z"), ("A".."Z")].map(&:to_a).
-                           reduce(&:+).
-                           each_with_index.
-                           map { |letter, index| [letter, index + 1] }.
-                           to_h[item]
+  [*"a".."z", *"A".."Z"].zip(1..52).to_h[item]
 end
 
 def sum_of_priorities
