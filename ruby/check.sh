@@ -29,7 +29,7 @@ START=$(date +%s)
 echo "Running tests..."
 echo ""
 
-for i in {1..2}
+for i in {1..3}
 do
   for j in {1..2}
   do
