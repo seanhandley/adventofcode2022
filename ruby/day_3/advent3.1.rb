@@ -35,7 +35,7 @@
 
 def rucksacks
   @rucksacks ||= STDIN.read.
-                       split("\n").
+                       split.
                        map { |line| line.chars.each_slice(line.size / 2).to_a }
 end
 
@@ -44,7 +44,9 @@ def common_items(items)
 end
 
 def priority(item)
-  [*"a".."z", *"A".."Z"].zip(1..52).to_h[item]
+  (@priorities ||= [*"a".."z", *"A".."Z"].zip(1..52).to_h).tap do |priorities|
+    return priorities[item]
+  end
 end
 
 def sum_of_priorities

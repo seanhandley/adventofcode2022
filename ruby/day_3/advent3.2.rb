@@ -31,7 +31,7 @@ require_relative "./advent3.1"
 
 def rucksacks
   @rucksacks ||= STDIN.read.
-                       split("\n").
+                       split.
                        each_slice(3).
                        map { |lines| lines.map(&:chars) }
 end
